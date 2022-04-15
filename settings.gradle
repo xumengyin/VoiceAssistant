@@ -1,0 +1,17 @@
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//        jcenter() // Warning: this repository is going to shut down soon
+//    }
+//}
+//rootProject.name = "VoiceAssistant"
+include ':app'
+include ':push'
+include ':baseLib'
+include ':BaseLibrary'
+include ':NetworkLibrary'
+include ':X5WebviewLibrary'
+include ':UpdateLibrary'
+include ':SimpleUi'

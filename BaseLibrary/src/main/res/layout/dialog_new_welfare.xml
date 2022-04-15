@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/ic_bg_circle"
+            android:id="@+id/img_bg"
+            android:layout_width="460dp"
+            android:layout_height="460dp" />
+
+        <ImageView
+            android:id="@+id/img_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_new_welfare" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="@dimen/ui_offset_32"
+        android:layout_height="@dimen/ui_offset_32"
+        android:layout_marginBottom="@dimen/ui_offset_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_welfare_close"></ImageView>
+</LinearLayout>

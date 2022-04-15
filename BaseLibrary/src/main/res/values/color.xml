@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FBAD14</color>
+
+    <color name="dracula_primary">#FBAD14</color>
+    <color name="dracula_primary_dark">#FBAD14</color>
+
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="qr_code_flashlight_bg">#66000000</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#5a90dc</color>
+
+    <color name="ui_config_color_main">#FBAD14</color>
+    <color name="ui_config_color_button">#FBAD14</color>
+    <color name="ui_config_color_button_pressed">#EF9F03</color>
+    <color name="ui_config_color_button_un_enable">#F6F7F9</color>
+
+    <color name="ui_config_color_33">#333333</color>
+    <color name="ui_config_color_99">#999999</color>
+    <color name="ui_config_color_66">#666666</color>
+    <color name="ui_config_color_background">#F5F7FB</color>
+
+
+    <color name="ui_dark_config_ui_bg">#f6f7f9</color>
+    <color name="ui_dark_config_color_title">#FFFFFFFF</color>
+
+    <color name="ui_dark_config_color_money">#E95439</color>
+
+    <color name="ui_dark_config_color_button_1">#85D7E3</color>
+    <color name="ui_dark_config_color_button_to_1">#5AB6F7</color>
+    <color name="ui_dark_config_color_button_pressed_1">#1167A7</color>
+
+    <color name="ui_dark_config_color_button_2">#F2A450</color>
+    <color name="ui_dark_config_color_button_to_2">#E65130</color>
+    <color name="ui_dark_config_color_button_pressed_2">#CF320C</color>
+
+    <color name="ui_dark_config_color_dark_1">#303842</color>
+
+    <color name="ui_dark_config_color_text_important">#181818</color>
+    <color name="ui_dark_config_color_text_general">#434343</color>
+    <color name="ui_dark_config_color_text_assist_1">#8c8c8c</color>
+    <color name="ui_dark_config_color_grey">#FAFAFA</color>
+    <color name="ui_dark_config_color_grey_1">#fff6f7f9</color>
+    <color name="ui_dark_config_color_grey_button">#BFBFBF</color>
+    <color name="ui_dark_config_color_grey_2">#969799</color>
+    <color name="color_city_selected">#FFFBE6</color>
+    <color name="color_city_selected_text">#FBAD14</color>
+    <color name="color_red">#F5222D</color>
+    <color name="color_green">#008777</color>
+
+    <color name="color_web_moment">#8dd8fe</color>
+
+    <color name="color_gold_mul">#5A1414</color>
+
+    <color name="ui_config_color_white">#ffffff</color>
+
+</resources>

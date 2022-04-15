@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="vericationCodeInput">
+
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension"/>
+        <attr name="child_v_padding" format="dimension"/>
+        <attr name="child_width" format="dimension"/>
+        <attr name="child_height" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="box_bg_focus" format="reference"/>
+        <attr name="box_bg_normal" format="reference"/>
+        <attr name="inputType" format="string"/>
+    </declare-styleable>
+
+    //验证码倒计时按钮
+    <declare-styleable name="send_validate_button">
+        <attr name="disAblDrawable" format="reference" />
+        <attr name="defaultDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference" />
+        <attr name="rightMenuView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="canRightSwipe" format="boolean" />
+        <attr name="canLeftSwipe" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxView">
+        <attr name="speed" format="dimension" />
+        <attr name="src" format="reference" />
+        <attr name="sceneLength" format="integer" />
+        <attr name="randomness" format="reference" />
+        <attr name="initialState" format="enum">
+            <enum name="started" value="0" />
+            <enum name="stopped" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr format="integer" name="vcv_et_number"/>
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0"/>
+            <enum name="numberPassword" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="textPassword" value="3"/>
+        </attr>
+        <!--输入框的宽度-->
+        <attr format="dimension|reference" name="vcv_et_width"/>
+        <!--输入框文字颜色-->
+        <attr format="color|reference" name="vcv_et_text_color"/>
+        <!--输入框文字大小-->
+        <attr format="dimension|reference" name="vcv_et_text_size"/>
+        <!--输入框背景-->
+        <attr format="reference" name="vcv_et_bg"/>
+        <!--光标样式-->
+        <attr format="reference" name="vcv_et_cursor"/>
+        <!--是否隐藏光标-->
+        <attr format="boolean" name="vcv_et_cursor_visible"/>
+        <!--输入框间距，不输入则代表平分-->
+        <attr format="dimension|reference" name="vcv_et_spacing"/>
+
+    </declare-styleable>
+
+    <!--**************** UITabSegment ******************-->
+    <declare-styleable name="UIXTabSegment">
+        <attr name="uix_tab_indicator_height" format="dimension"/>
+        <attr name="uix_tab_has_indicator" format="boolean"/>
+        <attr name="uix_tab_indicator_top" format="boolean"/>
+        <attr name="uix_tab_indicator_with_follow_content" format="boolean"/>
+        <attr name="android:textSize"/>
+        <attr name="uix_tab_normal_text_size" format="dimension"/>
+        <attr name="uix_tab_selected_text_size" format="dimension"/>
+        <attr name="uix_tab_normal_color" format="color|reference"/>
+        <attr name="uix_tab_selected_color" format="color|reference"/>
+        <attr name="uix_tab_mode" format="enum">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+        <attr name="uix_tab_space" format="dimension"/>
+        <attr name="uix_tab_icon_position" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+
+        <attr name="uix_tab_typeface_provider" format="string"/>
+    </declare-styleable>
+    <attr name="UIXTabSegmentStyle" format="reference"/>
+
+    <attr name="uix_tab_sign_count_view" format="reference"/>
+    <attr name="uix_tab_sign_count_view_minSize" format="dimension"/>
+    <attr name="uix_tab_sign_count_view_minSize_with_text" format="dimension"/>
+    <attr name="uix_tab_sign_count_view_bg" format="reference"/>
+    <attr name="uix_tab_sign_count_view_padding_horizontal" format="dimension"/>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_config_color_pure_black">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_offset_68">
+
+        <ImageView
+            android:id="@+id/img_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_gold_light"></ImageView>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_offset_16"
+            android:layout_marginTop="@dimen/ui_offset_68"
+            android:layout_marginRight="@dimen/ui_offset_16"
+            android:background="@drawable/bg_award"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/skip_view"
+                    android:layout_width="@dimen/ui_offset_24"
+                    android:layout_height="@dimen/ui_offset_24"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/ui_offset_12"
+                    android:layout_marginRight="@dimen/ui_offset_12"
+                    android:background="@drawable/background_circle"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/skip_img_view"
+                    android:layout_width="@dimen/ui_offset_24"
+                    android:layout_height="@dimen/ui_offset_24"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/ui_offset_12"
+                    android:layout_marginRight="@dimen/ui_offset_12"
+                    android:src="@drawable/ic_award_success_delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/ui_offset_68"
+                    android:textColor="@color/ui_config_color_white"
+                    android:textSize="@dimen/ui_font_size_16"
+                    tools:text="恭喜获得110金币"></TextView>
+
+
+                <FrameLayout
+                    android:id="@+id/express_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/ui_offset_4"
+                    android:layout_marginTop="@dimen/ui_offset_32"
+                    android:layout_marginRight="@dimen/ui_offset_4"
+                    android:background="#D5D5D5" />
+
+                <Button
+                    android:id="@+id/btn_double"
+                    style="@style/CommonButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ui_btn_height_1"
+                    android:layout_marginLeft="@dimen/ui_offset_44"
+                    android:layout_marginTop="@dimen/ui_offset_32"
+                    android:layout_marginRight="@dimen/ui_offset_44"
+                    android:text="查看详情"></Button>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fl_double"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/ui_offset_16"
+                    android:layout_marginBottom="@dimen/ui_offset_20"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的金币:"
+                        android:textColor="@color/ui_dark_config_color_text_assist_1"
+                        android:textSize="@dimen/ui_font_size_14"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ui_offset_8"
+                        android:background="@drawable/ic_exchange"></ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_my_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ui_offset_2"
+                        android:textColor="@color/ui_dark_config_color_text_assist_1"
+                        android:textSize="@dimen/ui_font_size_14"
+                        tools:text="3333"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_my_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ui_config_color_main"
+                        android:textSize="@dimen/ui_font_size_14"
+                        tools:text="≈0.33"></TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ui_offset_30"
+            android:src="@drawable/ic_gold_gold"></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ui_offset_18"
+            android:src="@drawable/ic_gold_start"></ImageView>
+    </RelativeLayout>
+
+</RelativeLayout>

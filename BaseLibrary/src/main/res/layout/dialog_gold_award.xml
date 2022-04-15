@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_anim"
+            android:layout_width="460dp"
+            android:layout_height="460dp"
+            android:background="@drawable/ic_bg_circle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_bg"
+            android:layout_width="292dp"
+            android:layout_height="360dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_gold_bg">
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="@dimen/ui_offset_48"
+                android:layout_height="@dimen/ui_offset_48"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_award_delete"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/ll_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_offset_76"
+                    android:gravity="center"
+                    android:textColor="@color/ui_config_color_white"
+                    android:textSize="@dimen/ui_font_size_24"
+                    android:textStyle="bold"
+                    tools:text="恭喜获得110金币"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_sub_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_offset_8"
+                    android:text="当天累积兑换超过1500步，看视频继续兑换"
+                    android:textColor="@color/ui_dark_config_color_text_assist_1"
+                    android:textSize="@dimen/ui_font_size_12"
+                    android:visibility="gone"></TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_money"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/ui_offset_68">
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/ui_offset_4"
+                    android:id="@+id/tv_double"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_gold_double"
+                    android:gravity="center"
+                    android:textColor="#5A1414"
+                    android:textSize="@dimen/ui_font_size_14"
+                    tools:text="x2"></TextView>
+
+                <ImageView
+                    android:id="@+id/btn_double"
+                    android:layout_width="@dimen/ui_offset_80"
+                    android:layout_height="@dimen/ui_offset_80"
+                    android:layout_below="@+id/tv_double"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/ui_offset_4"
+                    android:layout_marginBottom="@dimen/ui_offset_12"
+                    android:src="@drawable/ic_gold_open"
+                    android:text="金币翻倍"></ImageView>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_open"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/ui_offset_10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的金币:"
+                    android:textColor="@color/ui_config_color_white"
+                    android:textSize="@dimen/ui_font_size_12"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_offset_8"
+                    android:background="@drawable/ic_exchange"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_my_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_offset_2"
+                    android:textColor="@color/ui_config_color_white"
+                    android:textSize="@dimen/ui_font_size_12"
+                    tools:text="3333"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_my_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ui_config_color_main"
+                    android:textSize="@dimen/ui_font_size_12"
+                    tools:text="≈0.33"></TextView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_s_cancel"
+        android:layout_width="@dimen/ui_offset_32"
+        android:layout_height="@dimen/ui_offset_32"
+        android:layout_marginBottom="@dimen/ui_offset_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_welfare_close"
+        android:visibility="gone"></ImageView>
+</LinearLayout>

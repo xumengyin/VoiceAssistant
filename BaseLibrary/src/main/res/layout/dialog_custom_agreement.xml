@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ui_big_dialog_bg"
+    android:elevation="@dimen/ui_offset_2"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_sub_tile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_offset_32"
+        android:layout_marginTop="@dimen/ui_offset_16"
+        android:layout_marginRight="@dimen/ui_offset_32"
+        android:layout_marginBottom="@dimen/ui_offset_16"
+        android:gravity="center_horizontal"
+        android:textColor="@color/ui_dark_config_color_text_important"
+        android:textSize="@dimen/ui_font_size_14" />
+
+    <com.qmuiteam.qmui.widget.QMUIWrapContentScrollView
+        android:id="@+id/ui_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_offset_12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/ui_dark_config_color_text_important"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我们根据最新的法律，向您说明熊猫走步的隐私政策，特向您推送本提示。请您阅读并充分理解相关条款。"
+                android:textSize="@dimen/ui_font_size_12" />
+
+            <TextView
+                android:textColor="@color/ui_dark_config_color_text_important"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_offset_16"
+                android:text="我们承诺"
+                android:textSize="@dimen/ui_font_size_12" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_offset_16"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/ui_offset_44"
+                    android:layout_height="@dimen/ui_offset_44"
+                    android:src="@drawable/ic_permission1"></ImageView>
+
+                <TextView
+                    android:textColor="@color/ui_dark_config_color_text_important"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_offset_8"
+                    android:text="我们会严格按照《网络安全法》、《信息网络传播保护条例》等保护您的个人信息。"
+                    android:textSize="@dimen/ui_font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_offset_16"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/ui_offset_44"
+                    android:layout_height="@dimen/ui_offset_44"
+                    android:src="@drawable/ic_permission2"></ImageView>
+
+                <TextView
+                    android:textColor="@color/ui_dark_config_color_text_important"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_offset_8"
+                    android:text="如果未经您的授权，我们不会使用您的个人信息用于您未授权的其他途径或目的。"
+                    android:textSize="@dimen/ui_font_size_12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/ui_dark_config_color_text_important"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_offset_16"
+                android:text="您点击“同意”，即表示您已阅读并同意更新后的《服务协议》及《隐私政策》"
+                android:textSize="@dimen/ui_font_size_12" />
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_offset_16"
+                android:textSize="@dimen/ui_font_size_14" />
+
+
+        </LinearLayout>
+    </com.qmuiteam.qmui.widget.QMUIWrapContentScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_offset_1_px"
+        android:layout_marginTop="@dimen/ui_offset_8"
+        android:background="@color/ui_config_color_line"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_offset_44"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ui_big_dialog_left_button"
+            android:text="不同意"
+            android:textSize="@dimen/ui_font_size_16" />
+
+
+        <View
+            android:layout_width="@dimen/ui_offset_1_px"
+            android:layout_height="match_parent"
+            android:background="@color/ui_config_color_line"></View>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ui_big_dialog_right_button"
+            android:text="同意"
+            android:textColor="@color/ui_config_color_main"
+            android:textSize="@dimen/ui_font_size_16" />
+    </LinearLayout>
+</LinearLayout>

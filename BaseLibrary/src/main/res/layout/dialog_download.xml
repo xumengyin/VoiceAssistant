@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_app_download"
+        android:orientation="vertical">
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="116dp"
+            android:paddingLeft="@dimen/ui_offset_4"
+            android:paddingTop="@dimen/ui_offset_1"
+            android:paddingRight="@dimen/ui_offset_4"
+            android:paddingBottom="@dimen/ui_offset_1"
+            android:textColor="@color/ui_config_color_main"
+            android:textSize="@dimen/ui_font_size_12"
+            app:qmui_borderColor="@color/ui_config_color_white"
+            app:qmui_backgroundColor="@color/ui_config_color_white"
+            app:qmui_radius="@dimen/ui_offset_10"
+            tools:text="v1.0.3" />
+
+
+        <ScrollView
+            android:id="@+id/ll_s"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_offset_120"
+            android:layout_marginLeft="@dimen/ui_offset_24"
+            android:layout_marginTop="264dp"
+            android:layout_marginRight="@dimen/ui_offset_24">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ui_offset_96"
+                android:textColor="@color/ui_dark_config_color_text_important"
+                tools:text="修复了" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/CommonButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_offset_40"
+            android:layout_below="@+id/ll_s"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/ui_offset_24"
+            android:layout_marginTop="@dimen/ui_offset_8"
+            android:layout_marginRight="@dimen/ui_offset_24"
+            android:text="立即更新" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/btn_ok"
+            android:textSize="@dimen/ui_font_size_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_offset_24"
+            android:layout_marginTop="@dimen/ui_offset_4"
+            android:layout_marginRight="@dimen/ui_offset_24"
+            android:textColor="@color/ui_dark_config_color_text_assist_1"
+            android:text="Wifi环境下更新不到30秒哦～" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="@dimen/ui_offset_32"
+        android:layout_height="@dimen/ui_offset_32"
+        android:layout_marginTop="@dimen/ui_offset_24"
+        android:layout_marginBottom="@dimen/ui_offset_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_welfare_close"></ImageView>
+</LinearLayout>

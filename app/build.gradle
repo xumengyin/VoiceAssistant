@@ -1,0 +1,84 @@
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.cpsdna.voiceassistant"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi" //, "armeabi", "x86" 按需设置
+        }
+        buildConfigField "int", "environmentAddress", rootProject.ext.environmentAddress
+        buildConfigField "String", "appName", rootProject.ext.appName
+        buildConfigField "String", "appTitle", rootProject.ext.appTitle
+//        manifestPlaceholders =[qqappid:"1105795812"]
+    }
+    signingConfigs {
+        cpsdna {
+            storeFile file("../apai.keystore")
+            storePassword "thunder"
+            keyAlias "apai.keystore"
+            keyPassword "thunder"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            signingConfig = signingConfigs.cpsdna
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            signingConfig = signingConfigs.cpsdna
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+            dirs project(':BaseLibrary').file('libs')
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    kapt {
+        generateStubs = true
+    }
+//    buildFeatures {
+//        dataBinding true
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.annotation:annotation:1.2.0'
+  //  implementation project(path: ':push')
+    implementation project(path: ':BaseLibrary')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    implementation 'com.github.tbruyelle:rxpermissions:0.12'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.12"
+//    kapt  "com.android.databinding:compiler:4.0.1"
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+}

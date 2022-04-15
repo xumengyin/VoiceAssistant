@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VoiceAssistant</string>
+    <string name="privacy_tip2">请您阅读并同意《用户协议》与《隐私政策》</string>
+    <string name="privacy_tip">欢迎你使用%s,我们将严格遵守相关法律法规和隐私政策以保护您的个人信息,为提供基本服务,需要联网以及调用您的如下权限或功能,以收集必要的个人信息:\n1.写手机存储权限\n2.获取定位权限\n3.获取设备信息权限\n如果您不同意以上必要权限,可能导致本应用部分功能无法使用\n您可以选择卸载本应用或前往"设置">权限管理关闭授权终止服务</string>
+</resources>

@@ -1,0 +1,52 @@
+<resources>
+
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="LoadingDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+
+    </style>
+
+    <style name="NoAnimationDialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="CommonButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/ui_font_size_16</item>
+        <item name="android:textColor">@color/ui_config_color_white</item>
+        <item name="android:background">@drawable/ui_s_button_bg</item>
+    </style>
+
+    <style name="CommonButtonWhite" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/ui_font_size_16</item>
+        <item name="android:textColor">@color/ui_config_color_button</item>
+        <item name="android:background">@drawable/ui_s_button_bg_white</item>
+    </style>
+
+    <style name="CommonButton1" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/ui_font_size_16</item>
+        <item name="android:textColor">@color/ui_config_color_white</item>
+        <item name="android:background">@drawable/ui_s_button_bg_1</item>
+    </style>
+
+    <style name="CommonButton2" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/ui_font_size_16</item>
+        <item name="android:textColor">@color/ui_config_color_white</item>
+        <item name="android:background">@drawable/ui_s_button_bg_2</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="ui_btn_width">320dp</dimen>
+    <dimen name="ui_btn_height">40dp</dimen>
+    <dimen name="ui_btn_height_1">40dp</dimen>
+    <dimen name="ui_btn_height_2">36dp</dimen>
+    <dimen name="ui_btn_height_3">32dp</dimen>
+</resources>
